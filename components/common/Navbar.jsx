@@ -17,7 +17,7 @@ const Navbar = () => {
        ARISE
       </h1>
 
-      <button className="text-2xl">
+      <button className="text-2xl block md:hidden">
        <AiOutlineMenu />
       </button>
      </div>
