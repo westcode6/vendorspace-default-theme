@@ -1,5 +1,4 @@
-import Image from "next/image";
-const LandingBanner = () => {
+export default function LandingBanner() {
  return (
   <>
    <main className="max-w-4xl mx-auto my-5 border-8 border-white rounded-lg  flex justify-center">
@@ -11,5 +10,4 @@ const LandingBanner = () => {
    </main>
   </>
  );
-};
-export default LandingBanner;
+}
