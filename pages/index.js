@@ -19,12 +19,12 @@ export default function Home() {
   <>
    <Head>
     <link
-     href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
+     href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap"
      rel="stylesheet"
     />
    </Head>
    <Navbar />
-   <main className="my-16 md:my-24"></main>
+   <main className="my-36 md:my-24"></main>
    <LandingBanner />
 
    <CategorieContainer>

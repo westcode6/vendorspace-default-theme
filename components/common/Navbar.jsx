@@ -10,22 +10,15 @@ import Search from "../utilities/Search";
 const Navbar = () => {
  return (
   <>
-   <nav className="w-full top-0 py-2 fixed bg-white md:shadow-xl z-20">
+   <nav className="w-full top-0 py-2 fixed bg-gray-100 md:shadow-xl z-20">
     <section className="flex flex-col md:flex-row justify-between md:items-center px-6 md:px-12 py-2">
      <div className="flex justify-between ">
-      <button className="text-2xl">
-       <AiOutlineMenu />
-      </button>
-
-      <h1 className="text-2xl md:text-3xl pl-10 md:pl-0 text-gray-700 font-black ">
+      <h1 className="text-2xl md:text-3xl text-gray-700 font-black ">
        ARISE
       </h1>
 
-      <button className="block md:hidden text-gray-800  hover:text-yellow-500 font-semibold flex justify-center items-center px-4">
-       <span className="px-2 text-2xl">
-        {" "}
-        <HiOutlineShoppingCart />
-       </span>
+      <button className="text-2xl">
+       <AiOutlineMenu />
       </button>
      </div>
      <div>
