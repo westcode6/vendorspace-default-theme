@@ -9,7 +9,7 @@ import Catergorie from "../components/hooks/Categorie";
 import CategorieContainer from "../components/hooks/CategorieContainer";
 import Deals from "../components/hooks/Deals";
 import DiscountBanner from "../components/hooks/DiscountBanner";
-import LandingBanner from "../components/hooks/Landingbanner";
+import LandingBanner from "../components/hooks/LandingBanner";
 import PopularCard from "../components/hooks/PopularCard";
 import TopDeals from "../components/hooks/TopDeals";
 import styles from "../styles/Home.module.css";
