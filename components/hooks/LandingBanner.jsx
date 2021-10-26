@@ -1,12 +1,21 @@
 export default function LandingBanner() {
  return (
   <>
-   <main className="max-w-6xl mx-auto my-5 border-8 border-white rounded-lg  flex justify-center">
-    <img
-     src="/image/singlebanner2.png"
-     className="w-full object-contain-scale"
-     alt="LandingBanner"
-    />
+   <main className="grid grid-cols-2 gap-5 px-3 md:px-10">
+    <div className="border-8 border-white rounded-lg">
+     <img
+      src="/image/banners/ads-banner.jpg"
+      className="object-contain-scale"
+      alt="ads-banner"
+     />
+    </div>
+    <div className="border-8 border-white rounded-lg">
+     <img
+      src="/image/banners/fashion-banner-3.jpg"
+      className="object-contain-scale h-full"
+      alt="ads-banner"
+     />
+    </div>
    </main>
   </>
  );

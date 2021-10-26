@@ -3,40 +3,45 @@ import {
  AiOutlineHeart,
  AiOutlineArrowRight,
 } from "react-icons/ai";
-export default function FashionCategories({ title }) {
+export default function FashionProducts({ title }) {
  const product = [
   {
    image: "/image/fashion/s86.jpg",
    productName: "Green Bo Ivy",
-   price: "$132.00",
+   price: "$632.00",
+   discount: "$ 950,000",
    link: "/products/1",
   },
 
   {
    image: "/image/fashion/s80.jpg",
    productName: "Green Bo Ivy",
-   price: "$132.00",
+   price: "$432.00",
+   discount: "$ 950,000",
    link: "/products/1",
   },
 
   {
    image: "/image/fashion/s93.jpg",
    productName: "Green Bo Ivy",
-   price: "$132.00",
+   price: "$232.00",
+   discount: "$ 950,000",
    link: "/products/1",
   },
 
   {
    image: "/image/fashion/shoe1.jpg",
    productName: "Green Bo Ivy",
-   price: "$132.00",
+   price: "$332.00",
+   discount: "$ 950,000",
    link: "/products/1",
   },
 
   {
    image: "/image/fashion/s95.jpg",
    productName: "Green Bo Ivy",
-   price: "$132.00",
+   price: "$632.00",
+   discount: "$ 950,000",
    link: "/products/1",
   },
 
@@ -44,15 +49,16 @@ export default function FashionCategories({ title }) {
    image: "/image/fashion/s84.jpg",
    productName: "Green Bo Ivy",
    price: "$532.00 ",
+   discount: "$ 950,000",
    link: "/products/1",
   },
  ];
 
  return (
   <section className="">
-   <div className="bg-green-100 flex justify-between items-center mb-3 rounded-lg py-3 px-3">
+   <div className="bg-blue-50 flex justify-between items-center mb-3 rounded-lg py-3 px-3">
     <h1 className="text-lg text-gray-700 font-semibold tracking-wide">
-     Fashion & Beauty
+     Fashion
     </h1>
 
     <Link href="/">
@@ -68,7 +74,7 @@ export default function FashionCategories({ title }) {
     <div className="grid grid-cols-12 gap-5 mb-4">
      {product.map((item, index) => (
       <div
-       className="col-span-6 md:col-span-2 shadow-md hover:shadow-2xl rounded-lg relative"
+       className="col-span-6 md:col-span-2 hover:shadow-xl transform hover:scale-105 transition duration-500 relative"
        key={index}
       >
        <Link href={item.link}>
@@ -82,12 +88,20 @@ export default function FashionCategories({ title }) {
          </figure>
 
          <div className="py-3 text-center">
-          <h5 className="font-semibold text-sm text-gray-700">
+          <h5 className="font-medium text-sm text-gray-700">
            {item.productName}
           </h5>
 
-          <div className="flex justify-center items-center">
-           <span>{item.price}</span>
+          <div className="flex flex-col justify-center items-center">
+           <h1 className="pt-1 font-semibold">
+            {item.price}
+           </h1>
+
+           <h1>
+            <small className="text-gray-500  line-through">
+             {item.discount}
+            </small>
+           </h1>
           </div>
          </div>
         </div>

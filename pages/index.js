@@ -1,18 +1,19 @@
 import Head from "next/head";
 import Image from "next/image";
-import FashionCategories from "../components/categories/fashion";
-import HealthAndBeauty from "../components/categories/health&beauty";
+import HealthAndBeauty from "../components/categories/health/Health&beauty";
 import Footer from "../components/common/Footer";
 import Navbar from "../components/common/Navbar";
 import AdsBanner from "../components/hooks/AdsBanner";
-import Catergorie from "../components/hooks/Categorie";
-import CategorieContainer from "../components/hooks/CategorieContainer";
-import Deals from "../components/hooks/Deals";
+import Catergories from "../components/categories/allCategories/Categories";
+import CategorieContainer from "../components/categories/allCategories/CategorieContainer";
+import SimilarProducts from "../components/hooks/SimilarProducts";
 import DiscountBanner from "../components/hooks/DiscountBanner";
 import LandingBanner from "../components/hooks/LandingBanner";
 import PopularCard from "../components/hooks/PopularCard";
-import TopDeals from "../components/hooks/TopDeals";
 import styles from "../styles/Home.module.css";
+import FashionProducts from "../components/categories/fashion/FashionProduct";
+import ProductContainer from "../components/hooks/ProductContainer";
+import WristWatches from "../components/categories/wristWatches/WristWatches";
 
 export default function Home() {
  return (
@@ -24,21 +25,26 @@ export default function Home() {
     />
    </Head>
    <Navbar />
-   <main className="my-36 md:my-24"></main>
+   <main className="my-40 md:my-24"></main>
    <LandingBanner />
 
    <CategorieContainer>
-    <Catergorie />
+    <Catergories />
    </CategorieContainer>
 
-   <TopDeals>
-    <FashionCategories />
-   </TopDeals>
+   <ProductContainer>
+    <FashionProducts />
+   </ProductContainer>
+
+   <ProductContainer>
+    <HealthAndBeauty />
+   </ProductContainer>
+
    <AdsBanner />
 
-   <TopDeals>
-    <HealthAndBeauty />
-   </TopDeals>
+   <ProductContainer>
+    <WristWatches />
+   </ProductContainer>
    <Footer />
 
    <style jsx global>{`
@@ -69,7 +75,7 @@ export default function Home() {
     }
     @media (max-width: 768px) {
      .search {
-      width: 300px;
+      width: 100%;
      }
     }
    `}</style>

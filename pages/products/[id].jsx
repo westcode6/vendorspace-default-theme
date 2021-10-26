@@ -1,8 +1,7 @@
 import Navbar from "../../components/common/Navbar";
 import Link from "next/link";
 import Footer from "../../components/common/Footer";
-import FashionCategories from "../../components/categories/fashion";
-import TopDeals from "../../components/hooks/TopDeals";
+import ProductContainer from "../../components/hooks/ProductContainer";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import {
  FaFacebookF,
@@ -11,28 +10,29 @@ import {
 } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import SimilarProducts from "../../components/hooks/SimilarProducts";
 export default function Product() {
  return (
   <>
    <Navbar />
 
-   <section className="text-gray-700 body-font overflow-hidden bg-white">
-    <div className="container px-5 pt-20 md:pt-28 mx-auto">
+   <section className="text-gray-700 body-font overflow-hidden bg-white pb-20">
+    <div className="container px-5 pt-20 md:pt-28 mx-auto pb-16">
      <div className="lg:w-5/6 mx-auto   flex flex-wrap">
       <img
        alt="ecommerce"
        className="lg:w-1/2  w-full object-cover rounded border border-gray-200"
-       src="/image/fashion/pullover.jpg"
+       src="/image/fashion/s83.jpg"
       />
       <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
        <h2 className="text-sm title-font text-gray-500 tracking-widest">
-        BEYOND COLLECTIONS
+        ARISE COLLECTIONS
        </h2>
        <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">
         Green ivy mart
        </h1>
        <div className="flex mb-4">
-        <span className="flex items-center text-red-600 text-xl space-x-2">
+        <span className="flex items-center text-yellow-600 text-xl space-x-2">
          <AiFillStar />
          <AiFillStar />
          <AiFillStar />
@@ -90,7 +90,7 @@ export default function Product() {
          $158.00
         </span>
         <Link href="/checkout/cart">
-         <button className="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">
+         <button className="flex ml-auto text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded">
           ADD TO CART
          </button>
         </Link>
@@ -101,10 +101,12 @@ export default function Product() {
       </div>
      </div>
     </div>
+
+    <ProductContainer title="Similar Product">
+     <SimilarProducts />
+    </ProductContainer>
    </section>
-   <TopDeals>
-    <FashionCategories />
-   </TopDeals>
+
    <Footer />
   </>
  );
