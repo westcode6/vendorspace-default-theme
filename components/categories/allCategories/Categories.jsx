@@ -36,45 +36,38 @@ export default function Catergories({ children }) {
 
  return (
   <>
-   <main>
-    <div
-     className="text-center py-3 mb-2"
-     style={{ background: "#E2F5FF", fontWeight: "600" }}
-    >
-     <h2 className="text-md text-gray-700 tracking-wide">
-      Featured Categories
-     </h2>
-    </div>
-    <section className="grid grid-cols-12">
-     {categorie.map((categorieId, index) => (
-      <Link href="/components/categories/fashion/FashionCollection">
-       <div
-        className="col-span-6 md:col-span-2 px-1 hover:shadow-xl transform hover:scale-105 transition duration-500"
-        key={index}
-       >
-        <figure>
-         <Image
-          src={categorieId.image}
-          width={220}
-          height={190}
-          className="object-cover rounded-sm"
-          alt="product"
-         />
-         {/* <img
-          src={categorieId.image}
-          className="object-cover h-52 w-full"
-          alt="product"
-         /> */}
-        </figure>
+   <div
+    className="text-center py-3 mb-2"
+    style={{ background: "#E2F5FF", fontWeight: "600" }}
+   >
+    <h2 className="text-md text-gray-700 tracking-wide">
+     Featured Categories
+    </h2>
+   </div>
+   <section className="grid grid-cols-12">
+    {categorie.map((categorieId, index) => (
+     <Link href="/components/categories/fashion/FashionCollection">
+      <div
+       className="col-span-6 md:col-span-2 px-1 hover:shadow-xl transform hover:scale-105 transition duration-500"
+       key={index}
+      >
+       <figure>
+        <Image
+         src={categorieId.image}
+         width={220}
+         height={190}
+         className="object-cover rounded-sm"
+         alt="product"
+        />
+       </figure>
 
-        <div className="h-12 text-center py-3 text-sm text-gray-700">
-         {categorieId.title}
-        </div>
+       <div className="h-12 text-center py-3 text-sm text-gray-700">
+        {categorieId.title}
        </div>
-      </Link>
-     ))}
-    </section>
-   </main>
+      </div>
+     </Link>
+    ))}
+   </section>
   </>
  );
 }
