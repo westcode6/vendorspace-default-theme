@@ -2,3 +2,23 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.search {
+ width: 600px;
+}
+.search,
+input,
+button {
+ border-radius: 5px;
+}
+
+.search-btn {
+ padding: 10px 10px;
+ background: #e4811c;
+ font-weight: 500px;
+}
+@media (max-width: 768px) {
+ .search {
+  width: 100%;
+ }
+}

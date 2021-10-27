@@ -16,8 +16,8 @@ export default function Product() {
   <>
    <Navbar />
 
-   <section className="text-gray-700 body-font overflow-hidden bg-white pb-20">
-    <div className="container px-5 pt-20 md:pt-28 mx-auto pb-16">
+   <section className="text-gray-700 body-font overflow-hidden bg-white pb-10">
+    <div className="px-5 pt-40 md:pt-28 mx-auto pb-12 md:pb-20">
      <div className="lg:w-5/6 mx-auto   flex flex-wrap">
       <img
        alt="ecommerce"
@@ -32,7 +32,7 @@ export default function Product() {
         Green ivy mart
        </h1>
        <div className="flex mb-4">
-        <span className="flex items-center text-yellow-600 text-xl space-x-2">
+        <span className="flex items-center text-yellow-600 text-xl space-x-1">
          <AiFillStar />
          <AiFillStar />
          <AiFillStar />

@@ -56,13 +56,13 @@ export default function HealthAndBeauty({ title }) {
 
  return (
   <section className="">
-   <div className="bg-blue-50 flex justify-between items-center mb-3 rounded-lg py-3 px-3">
-    <h1 className="text-lg text-gray-700 font-semibold tracking-wide">
+   <div className="bg-blue-50 flex justify-between items-center mb-5 rounded-md py-3 px-3">
+    <h1 className="text-md text-gray-700 font-semibold tracking-wide">
      Health & Beauty
     </h1>
 
     <Link href="/">
-     <a className="flex items-center font-medium hover:text-gray-500 text-sm">
+     <a className="flex items-center font-semibold hover:text-gray-500 text-sm">
       View More
       <span className="px-1 inline-flex">
        <AiOutlineArrowRight />
@@ -82,7 +82,7 @@ export default function HealthAndBeauty({ title }) {
          <figure>
           <img
            src={item.image}
-           className="object-cover h-56 w-full"
+           className="object-cover w-44 h-40 rounded-md"
            alt="product"
           />
          </figure>
@@ -106,12 +106,6 @@ export default function HealthAndBeauty({ title }) {
          </div>
         </div>
        </Link>
-
-       <div className="absolute w-7 h-7  border border-black text-center text-xs items-center  flex  justify-center text-white bottom-20 right-0">
-        <span className="text-xl text-black">
-         <AiOutlineHeart />
-        </span>
-       </div>
       </div>
      ))}
     </div>

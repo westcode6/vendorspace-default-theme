@@ -7,9 +7,7 @@ import AdsBanner from "../components/hooks/AdsBanner";
 import Catergories from "../components/categories/allCategories/Categories";
 import CategorieContainer from "../components/categories/allCategories/CategorieContainer";
 import SimilarProducts from "../components/hooks/SimilarProducts";
-import DiscountBanner from "../components/hooks/DiscountBanner";
 import LandingBanner from "../components/hooks/LandingBanner";
-import PopularCard from "../components/hooks/PopularCard";
 import styles from "../styles/Home.module.css";
 import FashionProducts from "../components/categories/fashion/FashionProduct";
 import ProductContainer from "../components/hooks/ProductContainer";
@@ -25,7 +23,7 @@ export default function Home() {
     />
    </Head>
    <Navbar />
-   <main className="my-40 md:my-24"></main>
+   <main className="my-36 md:my-20"></main>
    <LandingBanner />
 
    <CategorieContainer>
@@ -50,7 +48,7 @@ export default function Home() {
    <style jsx global>{`
     html,
     body {
-     background: #f5f5f5;
+     background: #f3f4f6;
      padding: 0;
      margin: 0;
      font-family: "Lato", sans-serif;

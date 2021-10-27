@@ -10,7 +10,7 @@ import Search from "../utilities/Search";
 const Navbar = () => {
  return (
   <>
-   <nav className="w-full top-0 py-2 fixed bg-white md:shadow-xl z-20 ">
+   <nav className="w-full top-0 py-2 fixed bg-gray-100 z-20 ">
     <section className="flex flex-col md:flex-row justify-between md:items-center px-6 md:px-12 py-2">
      <div className="flex justify-between border-b border-gray-200 pb-3">
       <h1 className="text-2xl md:text-3xl text-gray-700 font-black ">
