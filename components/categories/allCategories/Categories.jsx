@@ -45,11 +45,11 @@ export default function Catergories({ children }) {
     </h2>
    </div>
    <section className="grid grid-cols-12">
-    {categorie.map((categorieId, index) => (
+    {categorie.map((categorieId) => (
      <Link href="/components/categories/fashion/FashionCollection">
       <div
        className="col-span-6 md:col-span-2 px-1 hover:shadow-xl transform hover:scale-105 transition duration-500"
-       key={index}
+       key={categorieId}
       >
        <figure>
         <Image
